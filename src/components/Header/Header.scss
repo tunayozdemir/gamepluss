@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 120px 13px 120px ;
+  box-sizing: border-box;
+
+  &__right {
+    display: flex;
+
+    &--nav {
+      display: flex;
+
+      a {
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.57px;
+        text-decoration: none;
+        color: #000;
+        margin-right: 40px;
+        position: relative;
+        padding: 10px 0;
+        box-sizing: border-box;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.active,
+        &:hover {
+          color: #76b900;
+          transition: 300ms;
+
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            width: 24px;
+            height: 20px;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            margin: 0 auto;
+            background: url("../../assets/img/arrow-green.png") no-repeat center
+              center;
+          }
+        }
+      }
+    }
+
+    .button {
+      margin-left: 61px;
+    }
+  }
+}

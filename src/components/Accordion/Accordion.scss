@@ -1,0 +1,37 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e;
+  padding: 40px 30px 60px 30px;
+  box-sizing: border-box;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--title {
+      font-size: 24px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #afafaf;
+      margin: 0;
+    }
+
+    .accordion__icon {
+      transition: transform 0.6s ease;
+      
+      &.rotate {
+        transform: rotate(180deg);
+        transition: transform 0.6s ease;
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 30px;
+  }
+}
