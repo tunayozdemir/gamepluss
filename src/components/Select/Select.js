@@ -4,7 +4,7 @@ import './Select.scss'
 // const data = [{id: 0, label: "Title A-Z"}, {id: 1, label: "Title Z-A"}];
 
 function Select({ values, labels }) {
-  debugger
+  // debugger
   const [isOpen, setOpen] = useState(false);
   const [items, setItem] = useState(values);
   const [selectedItem, setSelectedItem] = useState("");

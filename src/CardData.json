@@ -4,13 +4,12 @@
       "id": 0,
       "alphabet":"A",
       "text":[
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "But the majority have suffered alteration in some form."}
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "There are many variations of passages of."}
       ],
       "year": 1932
     },
@@ -18,46 +17,46 @@
       "id": 1,
       "alphabet":"B",
       "text":[
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."}
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"}
       ]
     },
     {
       "id": 2,
       "alphabet":"C",
       "text":[
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."}
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"}
       ]
     },
     {
       "id": 3,
       "alphabet":"D",
       "text":[
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."}
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"}
       ]
     },
     {
       "id": 4,
       "alphabet":"E",
       "text":[
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."},
-        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
-        {"textContent" : "But the majority have suffered alteration in some form."}
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"},
+        {"textContent" : "There are many variations of passages of."},
+        {"textContent" : "But the majority have suffered"}
       ]
     }
   ]

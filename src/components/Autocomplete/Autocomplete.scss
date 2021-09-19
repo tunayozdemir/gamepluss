@@ -75,6 +75,11 @@
       letter-spacing: normal;
       margin-bottom: 5px;
       cursor: pointer;
+
+      span {
+        display: flex;
+        width: 100%;
+      }
     }
 
     &.active {
