@@ -66,6 +66,24 @@
           box-sizing: border-box;
         }
       }
+
+      .footer__language-option {
+        .select {
+          background-color: #fff;
+          color: #1e1e1e;
+          padding: 0;
+          width: 100%;
+          margin-bottom: 0;
+
+          &__body {
+            background-color: #fff;
+            border-top: 0;
+            padding: 0 5px;
+            top: -84px;
+            bottom: inherit;  
+          }
+        }
+      }
     }
 
     h4 {

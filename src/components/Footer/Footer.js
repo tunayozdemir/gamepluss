@@ -5,10 +5,11 @@ import facebook from '../../assets/img/icon-facebook.png'
 import twitter from '../../assets/img/icon-twitter.png'
 import instagram from '../../assets/img/icon-instagram.png'
 import youtube from '../../assets/img/icon-youtube.png'
+import Lang from '../../langData.json'
 
-const data = [{id: 0, label: "English"}, {id: 1, label: "Türkçe"}];
+// const data = [{id: 0, label: "English"}, {id: 1, label: "Türkçe"}];
 
-function Footer() {
+function Footer(values) {
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -38,7 +39,8 @@ function Footer() {
           </div>
           <div className="footer__language-option">
             <h4>Site Language</h4>
-            <Select />
+            <Select values={Lang} labels="English" />
+
           </div>
         </div>
       </div>

@@ -3,14 +3,13 @@
     {
       "id": 0,
       "alphabet":"A",
-      "author": "Louis-Ferdinand C\u00e9line",
-      "country": "France",
-      "imageLink": "images/voyage-au-bout-de-la-nuit.jpg",
-      "language": "French",
-      "link": "https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night\n",
-      "pages": 505,
       "text":[
         {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
         {"textContent" : "But the majority have suffered alteration in some form."}
       ],
       "year": 1932
@@ -18,62 +17,48 @@
     {
       "id": 1,
       "alphabet":"B",
-      "author": "Chinua Achebe",
-      "country": "Nigeria",
-      "imageLink": "images/things-fall-apart.jpg",
-      "language": "English",
-      "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
-      "pages": 209,
       "text":[
         {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
         {"textContent" : "But the majority have suffered alteration in some form."}
-      ],
-      "year": 1958
+      ]
     },
     {
       "id": 2,
       "alphabet":"C",
-      "author": "Hans Christian Andersen",
-      "country": "Denmark",
-      "imageLink": "images/fairy-tales.jpg",
-      "language": "Danish",
-      "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
-      "pages": 784,
       "text":[
         {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
         {"textContent" : "But the majority have suffered alteration in some form."}
-      ],
-      "year": 1836
+      ]
     },
     {
       "id": 3,
       "alphabet":"D",
-      "author": "Dante Alighieri",
-      "country": "Italy",
-      "imageLink": "images/the-divine-comedy.jpg",
-      "language": "Italian",
-      "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
-      "pages": 928,
       "text":[
         {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
         {"textContent" : "But the majority have suffered alteration in some form."}
-      ],
-      "year": 1315
+      ]
     },
     {
       "id": 4,
       "alphabet":"E",
-      "author": "Unknown",
-      "country": "Sumer and Akkadian Empire",
-      "imageLink": "images/the-epic-of-gilgamesh.jpg",
-      "language": "Akkadian",
-      "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
-      "pages": 160,
       "text":[
         {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
+        {"textContent" : "But the majority have suffered alteration in some form."},
+        {"textContent" : "There are many variations of passages of Lorem Ipsum available."},
         {"textContent" : "But the majority have suffered alteration in some form."}
-      ],
-      "year": -1700
+      ]
     }
   ]
 }

@@ -7,6 +7,8 @@ import CardData from '../../CardData.json'
 import './Main.scss'
 import Checkbox from '../CheckBox/CheckBox'
 import Select from '../Select/Select'
+import Lang from '../../langData.json'
+import Sort from '../../sortData.json'
 
 function Main(props) {
 
@@ -59,7 +61,7 @@ function Main(props) {
         </section>
 
         <section className="main__content">
-          <Select />
+          <Select values={Sort} labels="Title A-Z"/>
           <Card values={CardData} />
         </section>
 
