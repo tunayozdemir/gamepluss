@@ -20,8 +20,8 @@ function Main() {
       <div className="main__body">
         <section className="main__aside-filter">
           <h2>Browse Games</h2>
-          <Accordion title="State" content="aaa" />
-          <Accordion title="Genre Filtersate" content="bbb" />
+          <Accordion title="State" />
+          <Accordion title="Genre Filtersate" />
         </section>
 
         <section className="main__content">

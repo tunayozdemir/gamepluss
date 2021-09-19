@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   background: #1e1e1e;
-  padding: 40px 30px 60px 30px;
   box-sizing: border-box;
+  padding: 40px 30px 30px;
 
   &__head {
     display: flex;
@@ -32,6 +32,19 @@
   }
 
   &__content {
+    
+    overflow: hidden;
     padding-top: 30px;
+
+    &-text {
+      color: #afafaf;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+    }
+
   }
 }
