@@ -1,44 +1,81 @@
-import React, { useState, useEffect, filter } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Autocomplete.scss';
-import DummyData from '../../DummyData.json'
+import Clear from '../../assets/img/cancel.png'
+import Search from '../../assets/img/search.png'
+
+const Autocomplete = ({ optionsValue }) => {
+  const [searchText, setSearchText] = useState("");
+  const [suggest, setSuggest] = useState([]);
+  const [resfound, setResfound] = useState(true);
+  const [isVisible, setisVisible] = useState()
 
 
-function Autocomplete() {
-
-  const [search, setSearch] = useState('')
-  const [result, setResult] = useState([])
-
-  useEffect(() => {
-    console.log(DummyData)
-    if (search) {
-      setResult(DummyData.filter(item => item.title.includes(search)))
+  const handleChange = (e) => {
+    let searchVal = e.target.value;
+    let tempArray = [];
+    if (searchVal.length > 0) {
+      // debugger
+      tempArray = optionsValue.map((item) => item.title).sort().filter((e) => e.toLowerCase().includes(searchVal.toLowerCase()));
+      setResfound(tempArray.length !== 0 ? true : false);
     }
     else {
-      setResult([])
+      setResfound(false)
     }
-  }, [search])
+    setSuggest(tempArray);
+    setSearchText(searchVal);
+  };
+
+  const suggestedText = (value) => {
+    console.log(value);
+    setSearchText(value);
+    setSuggest([]);
+    setResfound(false)
+  };
+
+  const getSuggestions = () => {
+    if (suggest.length === 0 && searchText !== "" && !resfound) {
+      return <p>Search Content Not Found</p>;
+    }
+
+    return (
+      <ul className="search__result">
+        {suggest.map((item, index) => {
+          return (
+            <div key={index}>
+              <li onClick={() => suggestedText(item)}>{item}</li>
+              {index !== suggest.length - 1}
+            </div>
+          );
+        })}
+      </ul>
+    );
+  };
+
+  const clearText = () => {
+    setSearchText("")
+    setResfound(false)
+    setSuggest([])
+  }
+
+  useEffect(() => {
+    clearText()
+  }, [])
 
   return (
     <div className="search">
       <span className="search__icon"></span>
-      <input className="search__input"
+      <input
         type="text"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        placeholder="Search.."
+        className="search__input"
+        value={searchText}
+        onChange={handleChange}
       />
-      <span className="search__cancel-icon"></span>
-
-      {result &&
-        <ul className="search__result">
-          {result.map((item) =>
-            <li key={item.id} className="search__result-item">
-              {item.title}
-            </li>
-          )}
-        </ul>
+      {searchText &&
+        <span onClick={clearText} className="search__cancel-icon"></span>
       }
+      {resfound && getSuggestions()}
     </div>
   );
-}
-
+};
 export default Autocomplete;

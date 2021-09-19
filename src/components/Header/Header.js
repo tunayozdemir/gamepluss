@@ -17,28 +17,20 @@ function Header() {
     ["Support"]
   ]
 
-useEffect(() => {
+  useEffect(() => {
 
-}, [])
+  }, [])
 
   return (
     <header className="header">
       <Logo />
       <div className="header__right">
-        <nav className="header__right--nav">{items.map((item, key) => {
-          if (isActive === "active") {
-            {/* debugger */}
-            return (
-              <a href="javascript:;" className="" key={key} title={item}>{item}</a>
-            )
-          }
-          return (
-            <a href="javascript:;" key={key} title={item}>{item}</a>
-          )
-        })
-
-        }
-
+        <nav className="header__right--nav">
+          <a href="javascript:;" className="active" title="Games">Games</a>
+          <a href="javascript:;" className="" title="Membership">Membership</a>
+          <a href="javascript:;" className="" title="Download">Download</a>
+          <a href="javascript:;" className="" title="Blog">Blog</a>
+          <a href="javascript:;" className="" title="Support">Support</a>
         </nav>
         <Button title="LET'S PLAY" />
       </div>
