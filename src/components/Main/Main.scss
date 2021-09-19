@@ -68,6 +68,9 @@
 
     .main__content {
       width: 66%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
   }
 }

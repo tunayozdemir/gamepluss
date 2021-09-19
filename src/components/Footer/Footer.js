@@ -1,9 +1,12 @@
 import React from 'react'
 import './Footer.scss'
+import Select from '../Select/Select'
 import facebook from '../../assets/img/icon-facebook.png'
 import twitter from '../../assets/img/icon-twitter.png'
 import instagram from '../../assets/img/icon-instagram.png'
 import youtube from '../../assets/img/icon-youtube.png'
+
+const data = [{id: 0, label: "English"}, {id: 1, label: "Türkçe"}];
 
 function Footer() {
   return (
@@ -35,7 +38,7 @@ function Footer() {
           </div>
           <div className="footer__language-option">
             <h4>Site Language</h4>
-
+            <Select />
           </div>
         </div>
       </div>

@@ -1,0 +1,60 @@
+.select {
+  padding: 16px 16px 15px;
+  background-color: #1e1e1e;
+  width: 151px;
+  color: #afafaf;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 12px;
+
+  &__header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__body {
+    padding: 0 16px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    position: absolute;
+    bottom: -83px;
+    display: none;
+    background-color: #1e1e1e;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #000;
+
+    &.open {
+      display: block;
+    }
+
+    &-item {
+      cursor: pointer;
+      margin-bottom: 16px;
+    }
+  }
+
+  .select__icon {
+    position: relative;
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+    background: url("../../assets/img/icons-arrow-large.png") no-repeat center;
+    width: 24px;
+    height: 24px;
+
+    &.open {
+      transform: rotate(0deg);
+    }
+  }
+}
