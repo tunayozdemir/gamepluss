@@ -3,8 +3,8 @@ import './Accordion.scss'
 import Checkbox from '../CheckBox/CheckBox'
 import Arrow from '../../assets/img//icons-arrow-large.png'
 
-function Accordion(props) {
 
+const Accordion = ({ children, title }) => {
   const [isActive, setisActive] = useState("")
   const [heightState, setHeightState] = useState("auto");
   const [rotateState, setRotateState] = useState("accordion__icon")
@@ -12,7 +12,7 @@ function Accordion(props) {
   const content = useRef(null)
 
   function toggleAccordion() {
-    debugger
+    // debugger
     setisActive(isActive === "" ? "active" : "")
     setHeightState(isActive === "active" ? "0px" : `${content.current.scrollHeight}px`)
     setRotateState(isActive === "active" ? "accordion__icon" : "accordion__icon rotate")
@@ -23,10 +23,11 @@ function Accordion(props) {
     setisActive("active")
   }, [])
 
-  return (
+
+  return <>
     <div className="accordion">
       <div className={`accordion__head ${isActive}`} onClick={toggleAccordion}>
-        <h5 className="accordion__head--title">{props.title}</h5>
+        <h5 className="accordion__head--title">{title}</h5>
         <i className={`${rotateState}`} >
           <img src={Arrow} />
         </i>
@@ -35,17 +36,15 @@ function Accordion(props) {
         ref={content}
         style={{ maxHeight: `${heightState}` }}
         className="accordion__content">
-        {/* <div
-          className="accordion__content-text"
-          dangerouslySetInnerHTML={{ __html: props.content }}> */}
-          <div className="accordion__content-text">
-            <Checkbox children="Available"/>
-            <Checkbox children="Available"/>
-          </div>
+        <div className="accordion__content-text">
+          {children}
+        </div>
       </div>
-
     </div>
-  )
+
+  </>
 }
+
+
 
 export default Accordion
