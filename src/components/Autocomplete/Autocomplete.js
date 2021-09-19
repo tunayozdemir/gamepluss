@@ -41,10 +41,10 @@ const Autocomplete = ({ optionsValue }) => {
       <ul className="search__result">
         {suggest.map((item, index) => {
           return (
-            <div key={index}>
-              <li onClick={() => suggestedText(item)}>{item}</li>
+            <li className="search__input" key={index}>
+              <a onClick={() => suggestedText(item)}>{item}</a>
               {index !== suggest.length - 1}
-            </div>
+            </li>
           );
         })}
       </ul>
