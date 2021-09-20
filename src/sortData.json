@@ -1,11 +1,14 @@
 
    [
+    
     {
       "id": 0,
-      "label": "Title A-Z"
+      "label": "Title A-Z",
+      "alphabet":"A"
     },
     {
       "id": 1,
-      "label": "Title Z-A"
+      "label": "Title Z-A",
+      "alphabet":"Z"
     }
   ]

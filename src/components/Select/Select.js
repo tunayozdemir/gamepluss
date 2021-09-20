@@ -13,6 +13,7 @@ function Select({ values, labels }) {
 
   const handleItemClick = (id) => {
     selectedItem == id ? setSelectedItem(null) : setSelectedItem(id);
+    setOpen(false)
   }
 
   return (
